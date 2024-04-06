@@ -12,6 +12,7 @@ var selectOfModel = document.getElementById('model-select');
 function sendMessageToGroq() {
   //CONSTANTES O DECALARACIONES
   var message = textArea.value;
+  textArea.value = "";
   var model = selectOfModel.value;
   const url = 'https://api.groq.com/openai/v1/chat/completions';
   const headers = {
